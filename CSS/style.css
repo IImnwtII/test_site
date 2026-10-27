@@ -132,6 +132,7 @@ button {
 }
 
 .nav-list a {
+  position: relative;
   display: inline-flex;
   align-items: center;
   min-height: 44px;
@@ -141,9 +142,33 @@ button {
   transition: color .2s ease;
 }
 
+.nav-list a::after {
+  position: absolute;
+  right: 2px;
+  bottom: 3px;
+  left: 2px;
+  height: 2px;
+  content: "";
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--blue), #9B8CFF);
+  opacity: 0;
+  transform: scaleX(.35);
+  transition: opacity .25s ease, transform .25s ease;
+}
+
 .nav-list a:hover,
 .nav-list a:focus-visible {
   color: var(--blue);
+}
+
+.nav-list a.is-active {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.nav-list a.is-active::after {
+  opacity: 1;
+  transform: scaleX(1);
 }
 
 .menu-toggle {
@@ -873,6 +898,15 @@ h1 {
     background: var(--card);
   }
 
+  .nav-list a.is-active {
+    color: var(--blue);
+    background: rgba(102,199,255,.16);
+  }
+
+  .nav-list a::after {
+    display: none;
+  }
+
   .hero {
     min-height: 500px;
   }
@@ -1040,6 +1074,21 @@ h1 {
   .footer-bottom {
     flex-direction: column;
   }
+}
+
+/* Плавное появление секций при прокрутке:
+   класс .reveal добавляет скрипт, .is-visible — когда секция
+   входит в область просмотра. Без JS контент остаётся видимым. */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity .7s ease, transform .7s ease;
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
