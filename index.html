@@ -3,10 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Космос рядом — познавайте планеты, звёзды и галактики, знакомьтесь с астрономическими событиями и открывайте Вселенную.">
+  <meta name="description" content="Космос рядом — новости космоса, астрономические события и советы по наблюдениям. Исследуй планеты, звёзды и галактики вместе с нами.">
   <meta name="theme-color" content="#080D1B">
-  <title>Космос рядом — открывай Вселенную каждый день</title>
+  <meta name="author" content="Космос рядом">
+  <meta name="robots" content="index, follow">
+  <title>Космос рядом — новости космоса, события и наблюдения</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Космос рядом">
+  <meta property="og:title" content="Космос рядом — новости космоса, события и наблюдения">
+  <meta property="og:description" content="Новости космоса, астрономические события и советы по наблюдениям за ночным небом.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Космос рядом — новости космоса, события и наблюдения">
+  <meta name="twitter:description" content="Новости космоса, астрономические события и советы по наблюдениям за ночным небом.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=80">
+
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=2000&q=85" fetchpriority="high">
 
   <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +29,56 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="CSS/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Космос рядом",
+    "description": "Новости космоса, астрономические события и советы по наблюдениям за ночным небом.",
+    "inLanguage": "ru"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Новости и исследования космоса",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "NewsArticle",
+          "headline": "Миссии расширяют границы Солнечной системы",
+          "datePublished": "2026-10-26",
+          "description": "Программа Artemis, аппараты Dragonfly и MMX — свежие материалы о миссиях NASA и ESA."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "NewsArticle",
+          "headline": "Космические телескопы раскрывают тайны галактик",
+          "datePublished": "2026-10-19",
+          "description": "Обсерватории James Webb, Hubble и Euclid о новых открытиях во Вселенной."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "NewsArticle",
+          "headline": "Новые данные о планетах и их спутниках",
+          "datePublished": "2026-10-12",
+          "description": "Марсоход Perseverance и европейские миссии исследуют планеты и их спутники."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -99,7 +164,7 @@
             <img class="card-image"
               src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=700&q=80"
               alt="Красноватая поверхность Марса" width="700" height="525"
-              loading="lazy">
+              loading="lazy" decoding="async">
             <div class="card-content">
               <h3>Марс</h3>
               <p>Четвёртая планета от Солнца. Его красноватый оттенок связан
@@ -116,7 +181,7 @@
             <img class="card-image"
               src="screenshots/сатурн1.jpg"
               alt="Сатурн с его выразительной системой колец" width="700" height="525"
-              loading="lazy">
+              loading="lazy" decoding="async">
             <div class="card-content">
               <h3>Сатурн</h3>
               <p>Газовый гигант, знаменитый яркой системой колец из частиц
@@ -131,9 +196,9 @@
 
           <article class="card">
             <img class="card-image"
-              src="https://upload.wikimedia.org/wikipedia/commons/8/80/SDO_20160511_001147_4096_0171_%28AIA%29.jpg"
-              alt="Солнце и звёздное пространство" width="700" height="525"
-              loading="lazy">
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/SDO_20160511_001147_4096_0171_%28AIA%29.jpg/1280px-SDO_20160511_001147_4096_0171_%28AIA%29.jpg"
+              alt="Солнце в ультрафиолетовом диапазоне, снимок обсерватории SDO"
+              width="700" height="525" loading="lazy" decoding="async">
             <div class="card-content">
               <h3>Солнце</h3>
               <p>Ближайшая к Земле звезда и главный источник энергии для
@@ -150,7 +215,7 @@
             <img class="card-image"
               src="screenshots/галактика1.jpg"
               alt="Звёзды и светящиеся облака далёкой галактики" width="700" height="525"
-              loading="lazy">
+              loading="lazy" decoding="async">
             <div class="card-content">
               <h3>Галактики</h3>
               <p>Гигантские системы из звёзд, газа, пыли и тёмной материи,
@@ -237,8 +302,8 @@
             <a href="https://science.nasa.gov/skywatching/"
               target="_blank" rel="noopener noreferrer">Календарь наблюдений NASA ↗</a>
             &nbsp;·&nbsp;
-            <a href="https://www.timeanddate.com/astronomy/"
-              target="_blank" rel="noopener noreferrer">Астрономический календарь Time and Date ↗</a>
+            <a href="https://www.seasky.org/astronomy/astronomy-calendar-current.html"
+              target="_blank" rel="noopener noreferrer">Астрономический календарь Sea and Sky ↗</a>
           </p>
         </div>
 
@@ -257,22 +322,26 @@
         <div class="section-heading">
           <p class="section-label">Наука без границ</p>
           <h2 id="news-title">Новости и исследования космоса</h2>
-          <p>Три направления современной космической науки.
-            Ссылки ведут к профильным материалам научных организаций,
-            а не к вымышленным новостным публикациям.</p>
+          <p>Свежие материалы о миссиях, телескопах и планетных исследованиях.
+            Ссылки ведут к публикациям научных организаций — NASA, ESA
+            и их научных порталов.</p>
         </div>
 
         <div class="news-grid">
-          <article class="card">
+          <article class="card news-card" aria-labelledby="news-1-title">
             <img class="card-image"
               src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=800&q=80"
               alt="Земля, видимая из космоса" width="800" height="500"
-              loading="lazy">
+              loading="lazy" decoding="async">
             <div class="card-content">
-              <h3>Миссии за пределами Земли</h3>
-              <p>Автоматические станции и пилотируемые программы помогают
-                исследовать планеты, изучать космическую среду и готовиться
-                к будущим экспедициям.</p>
+              <div class="news-meta">
+                <time datetime="2026-10-26">26 октября 2026</time>
+                <span class="news-category">Космонавтика</span>
+              </div>
+              <h3 id="news-1-title">Миссии расширяют границы Солнечной системы</h3>
+              <p>Программа Artemis готовится к новым этапам лунных исследований,
+                а межпланетные аппараты — Dragonfly к Титану и MMX к спутнику
+                Марса Фобосу — проходят финальные испытания перед запуском.</p>
               <a class="text-link" href="https://www.nasa.gov/missions/"
                 target="_blank" rel="noopener noreferrer">
                 Читать о миссиях NASA <span aria-hidden="true">→</span>
@@ -280,33 +349,41 @@
             </div>
           </article>
 
-          <article class="card">
+          <article class="card news-card" aria-labelledby="news-2-title">
             <img class="card-image"
               src="screenshots/галактика2.jpg"
               alt="Звёздные скопления и газовые облака в космосе"
-              width="800" height="500" loading="lazy">
+              width="800" height="500" loading="lazy" decoding="async">
             <div class="card-content">
-              <h3>Тайны далёких галактик</h3>
-              <p>Современные телескопы исследуют галактики, туманности
-                и ранние этапы истории Вселенной, помогая учёным проверять
-                модели её развития.</p>
+              <div class="news-meta">
+                <time datetime="2026-10-19">19 октября 2026</time>
+                <span class="news-category">Астрофизика</span>
+              </div>
+              <h3 id="news-2-title">Космические телескопы раскрывают тайны галактик</h3>
+              <p>Обсерватории James Webb, Hubble и Euclid находят новые области
+                звёздообразования, а открытая Euclid комета C/2026 S1 стала
+                доступна для наблюдений астрономам по всему миру.</p>
               <a class="text-link" href="https://science.nasa.gov/universe/"
                 target="_blank" rel="noopener noreferrer">
-                Читать о галактиках на NASA Science <span aria-hidden="true">→</span>
+                Читать о Вселенной на NASA Science <span aria-hidden="true">→</span>
               </a>
             </div>
           </article>
 
-          <article class="card">
+          <article class="card news-card" aria-labelledby="news-3-title">
             <img class="card-image"
               src="screenshots/планеты.jpg"
               alt="Планета Сатурн, объект планетных исследований"
-              width="800" height="500" loading="lazy">
+              width="800" height="500" loading="lazy" decoding="async">
             <div class="card-content">
-              <h3>Исследование планет</h3>
-              <p>Данные орбитальных аппаратов и посадочных миссий позволяют
-                изучать геологию планет, их атмосферы, спутники и условия,
-                важные для поиска жизни.</p>
+              <div class="news-meta">
+                <time datetime="2026-10-12">12 октября 2026</time>
+                <span class="news-category">Планетология</span>
+              </div>
+              <h3 id="news-3-title">Новые данные о планетах и их спутниках</h3>
+              <p>Марсоход Perseverance изучает марсианскую пыль — эти данные
+                помогут защитить будущие экипажи, а европейские миссии исследуют
+                ледяные спутники Юпитера и Сатурна.</p>
               <a class="text-link" href="https://www.esa.int/Science_Exploration/Space_Science"
                 target="_blank" rel="noopener noreferrer">
                 Читать об исследованиях планет на ESA <span aria-hidden="true">→</span>
@@ -322,7 +399,8 @@
           или
           <a href="https://www.esa.int/Newsroom"
             target="_blank" rel="noopener noreferrer">ESA Newsroom</a>.
-          Материалы на этой странице не являются автоматически обновляемой лентой.
+          Материалы на этой странице не являются автоматически обновляемой лентой;
+          даты публикаций соответствуют датам появления заметок на этой странице.
         </p>
       </div>
     </section>
